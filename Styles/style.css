@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+}
+.max-container {
+  /* max-width: 90%; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+/* Header section styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+nav h1 {
+  font-size: 38px;
+  color: #e6533c;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 120px;
+  border: 1px solid rgb(71, 69, 69);
+  padding: 8px;
+  padding-right: 20px;
+  border-radius: 30px;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.home-btn {
+  background-color: #e6533c;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+}
+
+.icon {
+  display: none;
+}
+
+/* Banner section */
+.banner-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 800px; */
+}
+
+/* .banner-left {
+  width: 50%;
+} */
+.banner-left h1 {
+  font-size: 78px;
+}
+/* .banner-right {
+  width: 50%;
+} */
+
+.btn-div {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.join-btn {
+  background-color: #e6533c;
+  font-size: 20px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+.join-download {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  color: white;
+}
+
+.banner-container p {
+  color: rgb(124, 119, 119);
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.banner-right > img {
+  width: 100%;
+  object-fit: cover;
+}
+/* mobile */
+@media screen and (max-width: 575px) {
+  nav ul {
+    display: none;
+  }
+  .icon {
+    display: block;
+    font-size: 28px;
+  }
+  nav {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .max-container {
+    padding: 0 10px;
+  }
+  .banner-left h1 {
+    font-size: 48px;
+  }
+}
+
+/* Tab */
+@media screen and (max-width: 1023px) {
+  nav ul {
+    gap: 50px;
+  }
+  .banner-container {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .banner-left {
+    width: 100%;
+  }
+}
